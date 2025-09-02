@@ -1,0 +1,39 @@
+python3 -m pip install
+py --version
+py -m pip --version
+
+
+Open Project Settings:
+Navigate to File > Settings (or PyCharm > Preferences on macOS).
+Expand Project: <Your Project Name> in the left-hand panel.
+Select Python Interpreter.
+
+
+Add a New Interpreter:
+Click the gear icon next to the "Python Interpreter" dropdown.
+Select Add....
+
+
+Choose Environment Type:
+In the "Add Python Interpreter" dialog, select Virtualenv Environment from the left-hand menu.
+
+
+Configure New Virtual Environment:
+Choose New environment.
+Specify the Location for the virtual environment (typically within your project directory, e.g., venv).
+Select the Base interpreter (the Python version installed on your system that the virtual environment will be based on).
+Optionally, check "Inherit global site-packages" if you want the virtual environment to access packages installed globally.
+Optionally, check "Make available to all projects" if you intend to reuse this specific virtual environment across multiple projects.
+
+
+Create and Select:
+Click OK to create the virtual environment. PyCharm will create the venv folder and install basic packages like pip and setuptools.
+Ensure the newly created virtual environment is selected as the Project Interpreter in the "Python Interpreter" settings.
+
+
+Install Dependencies:
+If you have a requirements.txt file, PyCharm will usually prompt you to install the listed packages.
+Alternatively, you can manually install packages by clicking the + button in the "Python Interpreter" settings and searching for the desired packages.
+
+
+Note: If you are connecting to an existing virtual environment, you would select "Existing environment" in step 4 and provide the path to the Python executable within that environment.
